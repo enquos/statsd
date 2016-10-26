@@ -129,4 +129,5 @@ Optional Variables:
   }
 , automaticConfigReload: false
 , deleteIdleStats: true
+, percentThreshold: [ 90, 99 ]
 }
