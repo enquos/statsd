@@ -120,7 +120,13 @@ Optional Variables:
 */
 {
   graphitePort: 2003
-, graphiteHost: "graphite.example.com"
+, graphiteHost: "influxdb"
 , port: 8125
 , backends: [ "./backends/graphite" ]
+, graphite: {
+    legacyNamespace: false,
+    globalPrefix: "enquos"
+  }
+, automaticConfigReload: false
+, deleteIdleStats: true
 }
